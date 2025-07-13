@@ -85,8 +85,6 @@ a:hover {
   font-weight: 500;
 }
 
-
-
 .main-container {
   display: flex;
   flex-direction: row;
@@ -103,6 +101,7 @@ a:hover {
   width: 40%;
   padding: 20px;
   background-color: rgb(255, 240, 244);
+  padding-bottom: 10%;
 }
 
 .photo {
@@ -110,7 +109,6 @@ a:hover {
   justify-content: center;
   margin-bottom: 15px;
 }
-
 
 .photo img {
     max-width: 400px;
@@ -180,6 +178,7 @@ a:hover {
   height: auto;
   background-color: rgb(247, 243, 243);
   padding: 0 20px;
+  padding-bottom: 10%;
 }
 
 .skills ul, 
@@ -195,7 +194,8 @@ a:hover {
 
 .code-wrapper pre {
   background-color: rgb(43, 40, 40);
-  width: 50%;
+  max-width: 500px;
+  width: 100%;
   color: white;
   margin: 0 auto;
   padding: 0 20px;
@@ -211,6 +211,7 @@ a:hover {
 .footer-container {
   display: flex;
   padding: 30px;
+  gap: 20px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -228,8 +229,8 @@ a:hover {
 }
 
 .github-logo img {
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  width: 100%;
   aspect-ratio: 1;
 }
 
@@ -238,7 +239,8 @@ a:hover {
 }
 
 .rsschool-logo img {
-  width: 150px;
+  msx-width: 150px;
+  width: 100%;
   height: auto;
 }
 
@@ -259,6 +261,38 @@ a:hover {
 /* custome_classes */
 
 @media(max-width: 1250px) {
-  .main-content-left
-  .main-content-right
+  .main-content-left,
+  .main-content-right {
+    width: unset;
+  }
+
+  .header-title {
+    width: unset;
+  }
+}
+
+@media (max-width: 950px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .code-wrapper pre {
+    font-size: 12px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 400px) {
+  .text-subtitle {
+    font-size: 18px;
+  }
+
+  .contact-info a {
+    font-size: 15px;
+  }
 }
