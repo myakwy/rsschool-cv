@@ -95,6 +95,8 @@ a:hover {
   width: 100%;
 }
 
+/* НАЧАЛО ЛЕВОГО КОНТЕЙНЕРА */
+
 .main-content-left {
   display: flex;
   flex-direction: column;
@@ -171,6 +173,30 @@ a:hover {
   aspect-ratio: 65/65;
 }
 
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-project {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.link-project span {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.link-project a {
+  font-size: 25px;
+}
+
+/* НАЧАЛО ПРАВОГО КОНТЕЙНЕРА */
+
 .main-content-right {
   display: flex;
   flex-direction: column;
@@ -207,6 +233,8 @@ a:hover {
 .code-container span {
   color: #477aa3;
 }
+
+/* КОНЕЦ ПРАВОГО КОНТЕЙНЕРА */
 
 .footer-container {
   display: flex;
