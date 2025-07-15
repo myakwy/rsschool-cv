@@ -267,7 +267,7 @@ a:hover {
 }
 
 .rsschool-logo img {
-  msx-width: 150px;
+  max-width: 150px;
   width: 100%;
   height: auto;
 }
